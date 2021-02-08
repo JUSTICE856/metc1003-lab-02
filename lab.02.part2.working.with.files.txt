@@ -1,0 +1,444 @@
+MTEC1003 — LAB 02 (revised revised 2/7/21 —lg)
+
+LAB 2 / PART 2: Working With Files
+
+==========
+Follow the instructions line-by-line.
+
+* Type in the commands as is, but ignore the beginning prompt.
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
+* "No output" or "nothing happens" are valid answers to any of the questions.
+==========
+
+1a. Go to your home directory.
+
+Write the command that you used to do this below:
+----------
+~
+
+
+==========
+1b. Prove that you're in your home directory.
+
+Write the command that you used to do this - as well as its output - below :
+----------
+$ ~
+bash: /c/Users/ndukw: Is a directory
+
+
+
+==========
+1c. Create a new directory inside your home directory named after this class. Call it "mtec1003-lab-02".
+
+Write the command that you used to do this:
+----------
+mkdir mtec1003-lab-02
+
+
+==========
+
+==========
+1d. Change into your mtec1003-lab-02 directory.
+
+What command did you use?
+----------
+
+
+cd mtec1003-lab-02
+==========
+2. Create a directory called my_files.
+Then, change into your new directory.
+
+What two commands did you use?
+----------
+mkdir my_files
+
+cd my_files
+
+
+
+==========
+3. Create a new file using touch:
+
+$ touch foo.txt
+$ ls
+
+Copy and paste the output below.
+----------
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.0.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.1.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.2.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TM.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ aardvark/
+ anaconda3/
+'copy to backup.sh'*
+ debug.log
+ foo.txt
+ hello.txt
+ mtec1003/
+ my.file
+ my_files/
+ mygoogle.html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pineapple/
+ strawberry/
+ stuff/
+ stuff.tar.gz
+ test/
+
+
+
+
+==========
+4. Create another new file called "bar.txt".
+
+What command did you use?
+----------
+touch bar.txt
+
+
+
+
+==========
+5. Create a copy of bar.txt called baz.txt, and then list the files again.
+
+Write the commands that you used.
+Also, copy and paste the output of your file listing below.
+----------
+$ cp -r bar.txt baz.txt
+
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.0.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.1.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.2.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TM.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ aardvark/
+ anaconda3/
+ bar.txt/
+ baz.txt/
+'copy to backup.sh'*
+ debug.log
+ foo.txt
+ hello.txt
+ mtec1003/
+ my.file
+ my_files/
+ mygoogle.html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pineapple/
+ strawberry/
+ stuff/
+ stuff.tar.gz
+ test/
+
+
+
+
+
+
+
+==========
+6. Delete the file called bar.txt and then list the files again.
+
+Write the command that you used to remove the file.
+Copy and paste the output of your file listing below.
+----------
+$ rmdir bar.txt
+
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.0.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.1.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.2.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TM.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ aardvark/
+ anaconda3/
+ baz.txt/
+'copy to backup.sh'*
+ debug.log
+ foo.txt
+ hello.txt
+ mtec1003/
+ my.file
+ my_files/
+ mygoogle.html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pineapple/
+ strawberry/
+ stuff/
+ stuff.tar.gz
+ test/
+
+
+
+
+
+
+
+==========
+7. Move the file called foo.txt to qux.txt and then list the files again.
+
+
+Write the command that you used to move the file.
+Copy and paste the output of your file listing below.
+----------
+$ mv foo.txt qux.txt
+
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.0.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.1.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.2.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TM.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ aardvark/
+ anaconda3/
+ baz.txt/
+'copy to backup.sh'*
+ debug.log
+ hello.txt
+ mtec1003/
+ my.file
+ my_files/
+ mygoogle.html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pineapple/
+ qux.txt
+ strawberry/
+ stuff/
+ stuff.tar.gz
+ test/
+
+
+
+
+
+
+
+
+==========
+8. Go up one directory so that you're back in ~/mtec1003-lab-02. What command did you use?
+----------
+..(dot dot)
+
+
+==========
+9. Try removing the directory called my_files using rmdir.
+
+Write out the command that you used and what happened.
+----------
+
+ $ rmdir  my_files/
+rmdir: failed to remove 'my_files/': Directory not empty
+
+
+
+
+
+
+==========
+10. Try removing the directory called my_files using rm.
+
+Write out the command that you used and what happened.
+----------
+
+$ rm my_files/
+rm: cannot remove 'my_files/': Is a directory
+
+
+
+
+
+
+
+==========
+11. First: MAKE SURE YOU'RE IN THE mtec1003-lab-02 directory!
+***If you accidentally delete your other files, you'll have to start over!!***
+
+Force the removal of the directory and its files using the -rf flag
+
+Use this command:
+
+$ options r = recursive; f = skip confirmation)
+----------
+
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.0.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.1.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.2.regtrans-ms
+ NTUSER.DAT{722bb0cb-ebc2-11e9-9498-00155df63b63}.TxR.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TM.blf
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{722bb0cc-ebc2-11e9-9498-00155df63b63}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ aardvark/
+ anaconda3/
+ baz.txt/
+'copy to backup.sh'*
+ debug.log
+ hello.txt
+ mtec1003/
+ mtec1003-lab-02/
+ my.file
+ mygoogle.html
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ pineapple/
+ qux.txt
+ strawberry/
+ stuff/
+ stuff.tar.gz
+ test/
+
+
+
+
+==========
